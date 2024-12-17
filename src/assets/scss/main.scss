@@ -1,0 +1,21 @@
+@import './_font.scss';
+@import './_star.scss';
+@import './_body.scss';
+@import './_container.scss';
+@import './/_variable.scss';
+
+*::after,
+*::before,
+* {
+
+    @include star()
+}
+
+body {
+    @include body();
+    background-color: $colorF9;
+}
+
+.container {
+    @include container()
+}

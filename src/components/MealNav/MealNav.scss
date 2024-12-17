@@ -1,0 +1,37 @@
+@import '../../App.scss';
+
+.nav {
+    display: flex;
+    margin-top: 40px;
+    align-items: center;
+    gap: 20px;
+
+    &__link,
+    .active {
+        gap: 10px;
+        display: flex;
+        color: $color00;
+        font-size: 16px;
+        font-weight: 400;
+        padding: 9px 14px;
+        align-items: center;
+        border-radius: 20px;
+        line-height: 21.82px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+
+    .nav__link {
+        background-color: $colorFFF;
+
+        &:hover {
+            background-color: #d88d00;
+        }
+    }
+
+    .active {
+        background: #FFAB08;
+    }
+
+
+}
