@@ -1,0 +1,27 @@
+@import '../App.scss';
+
+.header {
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__logoBox {
+        display: grid;
+        grid-gap: 65px;
+        align-items: center;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__logo {
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 30.48px;
+        color: $color10;
+    }
+
+    &__dropdownBox {
+        position: relative;
+        transform: translateY(-40px);
+    }
+}

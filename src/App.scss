@@ -1,87 +1,37 @@
 @import './assets/scss/main.scss';
-.app {
-    display: flex;
-    gap: 20px;
-    padding: 20px;
-  }
-  
-  .burger-list {
+
+.title {
+    color: $color83;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24.38px;
+    margin-bottom: 20px;
+}
+
+.general {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 20px;
-  
-    .burger {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      text-align: center;
-  
-      img {
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-      }
-  
-      h3 {
-        font-size: 1.2rem;
-        margin: 10px 0;
-      }
-  
-      button {
-        padding: 5px 10px;
-        border: none;
-        background-color: #ff6700;
-        color: white;
-        border-radius: 4px;
-        cursor: pointer;
-  
-        &:hover {
-          background-color: #ff4500;
-        }
-      }
+    grid-gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+    grid-template-columns: repeat(3, 350px);
+}
+
+@media screen and (max-width:992px) {
+    .container {
+        width: 90%;
     }
-  }
-  
-  .cart {
-    width: 300px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-  
-    h2 {
-      font-size: 1.5rem;
+
+    .general {
+        grid-template-columns: repeat(2, 1fr);
     }
-  
-    .cart-item {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 10px;
-  
-      .quantity-controls {
-        display: flex;
-        align-items: center;
-        gap: 5px;
-  
-        button {
-          padding: 5px;
-          border: none;
-          background-color: #ddd;
-          border-radius: 4px;
-          cursor: pointer;
-  
-          &:hover {
-            background-color: #ccc;
-          }
-        }
-      }
+}
+@media screen and (max-width:768px) {
+    .container {
+        width: 95%;
     }
-  
-    h3 {
-      text-align: right;
+
+    .general {
+        justify-content: center;
+        grid-template-columns: repeat(1, 90%);
     }
-  }
-  
+}

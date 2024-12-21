@@ -1,0 +1,37 @@
+@import '../../../App.scss';
+
+.emptyCart {
+    margin: 61px 0px 127px;
+    text-align: center;
+
+    &__title {
+        margin-top: 30px;
+        color: $color10;
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 36.57px;
+    }
+
+    &__text {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24.38px;
+        color: $color83;
+    }
+
+    &__btn {
+        width: 500px;
+        margin: 0 auto;
+        margin-top: 30px;
+        border-radius: 30px;
+        display: block;
+        padding: 20px 0px;
+        background: $color10;
+        box-shadow: 0px 0px 20px 0px #00000040;
+        color: $colorFFF;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 24.38px;
+
+    }
+}

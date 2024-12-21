@@ -1,0 +1,62 @@
+@import '../App.scss';
+
+.footer {
+    width: 100%;
+    margin-top: 60px;
+    padding: 30px 30px 32px;
+    background: $colorFFF;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    // position: fixed;
+    // bottom: 0;
+
+    &__item {
+        margin-bottom: 10px;
+
+    }
+
+    &__links {
+        color: $color00;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 20.72px;
+    }
+
+    &__inner {
+        color: $color00;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 20.72px;
+    }
+
+    &__btnBox {
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        i {
+            font-size: 16px;
+        }
+    }
+
+    &__lngBtn {
+        color: $color10;
+        font-size: 16px;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 18.29px;
+        background: transparent;
+        cursor: pointer;
+        transition: all .4s ease;
+    }
+
+    &__lngBtn:active,
+    &__lngBtn:hover,
+    &__lngBtn:focus{
+        color: $colorFFA;
+    }
+
+}

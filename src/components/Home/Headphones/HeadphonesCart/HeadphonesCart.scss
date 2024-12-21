@@ -1,0 +1,99 @@
+@import '../../../../App.scss';
+
+.headphonesCart {
+    cursor: pointer;
+    position: relative;
+    border-radius: 30px;
+    background: $colorFFF;
+    padding: 15px 35px 32px;
+    box-shadow: 0px 0px 20px 0px #0000001A;
+    height: 42  0px;
+
+    &__img {
+        width: 100%;
+        height: 237px;
+    }
+
+    &__likeBtn {
+        position: absolute;
+        font-size: 24px;
+        left: 20px;
+        background: transparent;
+        cursor: pointer;
+    }
+
+    &__box {
+        margin-top: 54px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__name {
+        color: $color1C;
+        font-size: 17px;
+        font-weight: 600;
+        line-height: 20.72px;
+    }
+
+    &__priceBox {
+        display: flex;
+        gap: 20px;
+    }
+
+    &__price {
+        color: $colorFFA;
+        font-size: 17px;
+        font-weight: 600;
+        line-height: 20.72px;
+
+        span {
+            font-size: 13px;
+            line-height: 15px;
+            color: $colorFFC;
+            text-decoration: line-through;
+        }
+    }
+
+    &__discount {
+        color: $colorDF;
+        font-size: 16.29px;
+        font-weight: 600;
+        line-height: 19.86px;
+    }
+
+    &__star {
+        display: flex;
+        gap: 10px;
+        margin-top: 20px;
+        align-items: center;
+        justify-content: space-between;
+        color: $color83;
+        font-size: 17px;
+        font-weight: 600;
+        line-height: 20.72px;
+        // position: relative;
+        // bottom: 20px;
+
+
+        i {
+            color: $colorFFC;
+        }
+
+    }
+
+    &__buyBtn {
+        background: transparent;
+        font-size: 24px;
+        cursor: pointer;
+
+        i {
+            color: $color83;
+        }
+    }
+
+    &__buyBtn:hover i,
+    &__buyBtn:active i,
+    &__buyBtn:focus i {
+        color: $colorFFC ;
+    }
+}

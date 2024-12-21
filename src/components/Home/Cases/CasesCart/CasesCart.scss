@@ -1,0 +1,21 @@
+@import '../../../../App.scss';
+.casesCart {
+    padding: 25px 100px 50px;
+    text-align: center;
+    background-color:$colorFFF ;
+    border-radius: 20px;
+    cursor: pointer;
+
+    &__img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    &__name {
+        color: $color1C;
+        font-size: 17px;
+        font-weight: 600;
+        line-height: 20.72px;
+
+    }
+}

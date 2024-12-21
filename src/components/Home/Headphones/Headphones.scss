@@ -1,0 +1,13 @@
+@import '../../../App.scss';
+
+.headphones {
+    margin-top: 30px;
+
+    &__general {
+        display: grid;
+        grid-gap: 30px;
+        align-items: center;
+        justify-content: space-between;
+        grid-template-columns: repeat(3, 350px);
+    }
+}

@@ -1,0 +1,26 @@
+@import '../../../App.scss';
+
+.hero {
+    margin-top: 30px;
+    width: 100%;
+    display: grid;
+    grid-gap: 40px;
+    align-items: center;
+    justify-content: center;
+    justify-content: center;
+    grid-template-columns: repeat(2, auto);
+    background: $color10;
+    border-radius: 30px;
+
+    &__title {
+        color: $colorFFF;
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 36.57px;
+        text-align: center;
+    }
+    &__img{
+        width: 100%;
+        height: 300px;
+    }
+}

@@ -1,0 +1,30 @@
+@import '../../App.scss';
+
+.nav {
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
+    &__links {
+        color: $color83;
+        font-size: 30px;
+        position: relative;
+    }
+
+    &__spans {
+        width: 18px;
+        position: absolute;
+        top: -5px;
+        font-size: 15px;
+        font-weight: 500;
+        color: $colorFFF;
+        border-radius: 50%;
+        text-align: center;
+        // line-height: 18.29px;
+        background: $colorFFA;
+        transform: translateX(-10px);
+
+    }
+}

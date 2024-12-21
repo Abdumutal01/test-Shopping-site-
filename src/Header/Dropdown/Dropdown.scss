@@ -1,0 +1,72 @@
+@import '../../App.scss';
+
+.dropdown {
+  width: 255px;
+  margin: 20px auto;
+  background-color: $colorEA;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+
+
+  .selected-item {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background: transparent;
+  }
+
+  .dropdown-section {
+
+    .dropdown-header {
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 15px;
+      background-color: white;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: #e8e8e8;
+      }
+
+      .arrow {
+        transition: transform 0.3s;
+        transform: rotate(0);
+
+        &.open {
+          transform: rotate(180deg);
+        }
+      }
+    }
+
+    .dropdown-list {
+      margin-top: 5px;
+      padding: 0;
+      list-style: none;
+      border-radius: 5px;
+      background-color: white;
+
+      .dropdown-item {
+        padding: 10px 15px;
+        font-size: 14px;
+        color: #333;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s;
+
+        &:hover {
+          background-color: #f0f0f0;
+        }
+
+        &.selected {
+          color: orange;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
